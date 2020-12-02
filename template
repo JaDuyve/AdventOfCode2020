@@ -1,0 +1,11 @@
+package main
+
+import (
+   	"AdventOfCode2020/utils/files"
+)
+
+func main() {
+    input := files.ReadFile("input", "\n")
+    println(input)
+
+}

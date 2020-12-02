@@ -1,36 +1,14 @@
 package main
 
 import (
+	"AdventOfCode2020/utils/conv"
+	"AdventOfCode2020/utils/files"
 	"fmt"
-	"io/ioutil"
-	"strconv"
-	"strings"
 )
 
-func sliceAtoi(sa []string) ([]int, error) {
-	si := make([]int, 0, len(sa))
-	for _, a := range sa {
-		i, err := strconv.Atoi(a)
-		if err != nil {
-			return si, err
-		}
-		si = append(si, i)
-	}
-	return si, nil
-}
-
 func main() {
-	data, err := ioutil.ReadFile("input")
-	if err != nil {
-		panic(err)
-	}
-
-	numbers := strings.Split(string(data), "\n")
-	expenseReport, err := sliceAtoi(numbers)
-
-	if err != nil {
-		panic(err)
-	}
+	numbers := files.ReadFile("input", "\n")
+	expenseReport := conv.ToIntSlice(numbers)
 
 J:
 	for indexA, expenseA := range expenseReport {
