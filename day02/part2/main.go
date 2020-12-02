@@ -30,6 +30,5 @@ func main() {
 }
 
 func isValid(min int, max int, character uint8, password string) bool {
-	return (password[min - 1] == character || password[max - 1] == character) &&
-		password[min - 1] != password[max - 1]
+	return (password[min - 1] == character) != (password[max - 1] == character)
 }
