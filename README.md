@@ -24,10 +24,10 @@ Each puzzle grants one star. Good luck!
 
 | Day  | Part One | Part Two | 
 |---|:---:|:---:|
-| ✔ [Day 1: Report Repair](https://github.com/JaDuyve/AdventOfCode2020/calendar/day01)| 🌟 | 🌟 |
-| ✔ [Day 2: Password Philosophy](https://github.com/JaDuyve/AdventOfCode2020/calendar/day02)| 🌟 | 🌟 |
-| ✔ [Day 3: Toboggan Trajectory]()| 🌟 | 🌟 |
-| [Day 4: TBD]()| | |
+| ✔ [Day 1: Report Repair](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day01)| 🌟 | 🌟 |
+| ✔ [Day 2: Password Philosophy](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day02)| 🌟 | 🌟 |
+| ✔ [Day 3: Toboggan Trajectory](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day03)| 🌟 | 🌟 |
+| ✔ [Day 4: Passport Processing](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day04)| 🌟 | 🌟 |
 | [Day 5: TBD]()| | |
 | [Day 6: TBD]()| | |
 | [Day 7: TBD]()| | |

@@ -65,11 +65,8 @@ func isValidYear(yearString string, start int, end int) bool {
 }
 
 func isValidEyeColor(color string) bool {
-	validColors := map[string]struct{}{"amb":{}, "blu":{}, "brn":{}, "gry":{}, "grn":{}, "hzl":{}, "oth":{}}
-
-	_, present := validColors[color]
-
-	return present
+	match, _ := regexp.MatchString("^(amb|blu|brn|gry|grn|hzl|oth)$", color)
+	return match
 }
 
 func isValidHairColor(color string) bool {
