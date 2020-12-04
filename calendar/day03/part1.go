@@ -3,11 +3,16 @@ package day03
 import (
 	"AdventOfCode2020/utils/files"
 	"AdventOfCode2020/utils/slices"
+	"strings"
 )
 
 func Part1() int {
-	input := files.ReadFile("calendar/day03/input", "\n")
-	area := slices.ToTwoDimArray(input, "")
+	input := files.ReadFile("calendar/day03/input")
+	return solvePart1(input)
+}
+
+func solvePart1(puzzleInput string) int {
+	area := slices.ToTwoDimArray(strings.Split(puzzleInput, "\n"), "")
 
 	numberOfTrees := calcNumberOfTreesForSlope1(area, 3, 1)
 
