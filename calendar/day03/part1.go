@@ -1,36 +1,28 @@
-package main
+package day03
 
 import (
 	"AdventOfCode2020/utils/files"
 	"AdventOfCode2020/utils/slices"
-	"fmt"
 )
 
-func main() {
-    input := files.ReadFile("input", "\n")
-    area := slices.ToTwoDimArray(input, "")
+func Part1() int {
+	input := files.ReadFile("calendar/day03/input", "\n")
+	area := slices.ToTwoDimArray(input, "")
 
-    numberOfTrees := calcNumberOfTrees(&area)
+	numberOfTrees := calcNumberOfTreesForSlope1(area, 3, 1)
 
-    fmt.Printf("came across [%d] trees during the journey.\n", numberOfTrees)
-    slices.Print2DimArray(area)
+	return numberOfTrees
 }
 
-func calcNumberOfTrees(area *[][]string) (numberOfTrees int) {
+func calcNumberOfTreesForSlope1(area [][]string, right int, down int) (numberOfTrees int) {
 
-	areaWidth := len((*area)[0])
+	areaWidth := len(area[0])
 
-	for x, y := 3, 1; y < len(*area); x, y= (x+3) % areaWidth, y + 1{
-		if (*area)[y][x] == "#" {
+	for x, y := right, down; y < len(area); x, y = (x+right)%areaWidth, y+down {
+		if area[y][x] == "#" {
 			numberOfTrees++
-			(*area)[y][x] = "X"
-		} else {
-			(*area)[y][x] = "O"
 		}
 	}
 
 	return
 }
-
-
-

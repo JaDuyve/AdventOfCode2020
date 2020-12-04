@@ -1,13 +1,12 @@
-package main
+package day03
 
 import (
 	"AdventOfCode2020/utils/files"
 	"AdventOfCode2020/utils/slices"
-	"fmt"
 )
 
-func main() {
-	input := files.ReadFile("input", "\n")
+func Part2() int {
+	input := files.ReadFile("calendar/day03/input", "\n")
 	area := slices.ToTwoDimArray(input, "")
 	slopes := [5][2]int{ {1, 1}, {3, 1}, {5, 1}, {7, 1}, {1, 2}}
 
@@ -16,11 +15,8 @@ func main() {
 		multipliedNumberOfTrees *= calcNumberOfTreesForSlope(area, slope[0], slope[1])
 	}
 
-	fmt.Printf("By multipling all the number of trees encountered on each of the listed slopes, we get [%d].\n",
-		multipliedNumberOfTrees)
+	return multipliedNumberOfTrees
 }
-
-
 
 
 func calcNumberOfTreesForSlope(area [][]string, right int, down int) (numberOfTrees int) {

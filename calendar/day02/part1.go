@@ -1,4 +1,4 @@
-package main
+package day02
 
 import (
 	"AdventOfCode2020/utils/files"
@@ -7,11 +7,11 @@ import (
 	"strings"
 )
 
-func main() {
-	input := files.ReadFile("input", "\n")
+func Part1() int {
+	input := files.ReadFile("calendar/day02/input", "\n")
 	validPasswords := slices.StringFilter(input, isPasswordValidCountChar)
 
-	fmt.Printf("There are [%d] valid passwords.\n", len(validPasswords))
+	return len(validPasswords)
 }
 
 func isPasswordValidCountChar(entry string) bool {

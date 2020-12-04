@@ -1,34 +1,26 @@
-package main
+package day01
 
 import (
 	"AdventOfCode2020/utils/conv"
 	"AdventOfCode2020/utils/files"
-	"fmt"
 )
 
+func Part1() int {
 
-
-func main() {
-
-	numbers := files.ReadFile("input", "\n")
+	numbers := files.ReadFile("calendar/day01/input", "\n")
 	expenseReport := conv.ToIntSlice(numbers)
 
-J: 	for indexA, expenseA := range expenseReport {
+	for indexA, expenseA := range expenseReport {
 		for indexB, expenseB := range expenseReport {
 			if indexA == indexB {
 				continue
 			}
 
-			if expenseA + expenseB == 2020 {
-				fmt.Printf("%d + %d = %d\n%d * %d = %d",
-					expenseA,
-					expenseB,
-					expenseA+expenseB,
-					expenseA,
-					expenseB,
-					expenseA*expenseB)
-				break J
+			if expenseA+expenseB == 2020 {
+				return expenseA * expenseB
 			}
 		}
 	}
+
+	return -1
 }
