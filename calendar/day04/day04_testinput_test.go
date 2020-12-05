@@ -5,6 +5,14 @@ import (
 	"testing"
 )
 
+func Test_SolvePart1_ValidInput(t *testing.T) {
+	input := "ecl:gry pid:860033327 eyr:2020 hcl:#fffffd\nbyr:1937 iyr:2017 cid:147 hgt:183cm\n\n" +
+		"iyr:2013 ecl:amb cid:350 eyr:2023 pid:028048884\nhcl:#cfa07d byr:1929\n\n" +
+		"hcl:#ae17e1 iyr:2013\neyr:2024\necl:brn pid:760753108 byr:1931\nhgt:179cm\n\n" +
+		"hcl:#cfa07d eyr:2025 pid:166559648\niyr:2011 ecl:brn hgt:59in"
+	assert.Equal(t, 2, solvePart1(input), "Answer to the puzzle should be 2.")
+}
+
 func Test_SolvePart2_ValidInput(t *testing.T) {
 	input := "pid:087499704 hgt:74in ecl:grn iyr:2012 eyr:2030 byr:1980\nhcl:#623a2f\n\n" +
 		"eyr:2029 ecl:blu cid:129 byr:1989\niyr:2014 pid:896056539 hcl:#a97842 hgt:165cm\n\n" +

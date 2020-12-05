@@ -8,11 +8,13 @@ import (
 )
 
 func Part1() int {
-	input := files.ReadFile("calendar/day04/input", "\n\n")
+	input := files.ReadFile("calendar/day04/input")
+	return solvePart1(input)
+}
 
-	validPassports := slices.StringFilter(input, isPassportValid)
-
-	return len(validPassports)
+func solvePart1(puzzleInput string) int {
+	passports := strings.Split(puzzleInput, "\n\n")
+	return len(slices.StringFilter(passports, isPassportValid))
 }
 
 func isPassportValid(passportString string) bool {
@@ -29,4 +31,3 @@ func isPassportValid(passportString string) bool {
 
 	return true
 }
-

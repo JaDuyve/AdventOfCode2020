@@ -5,7 +5,11 @@ import (
 )
 
 func main() {
-    input := files.ReadFile("input", "\n")
+    input := files.ReadFile("input")
     println(input)
+
+}
+
+func solvePart(puzzleInput string) int {
 
 }

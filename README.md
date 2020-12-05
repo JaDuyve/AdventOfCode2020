@@ -28,7 +28,7 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 2: Password Philosophy](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day02)| 🌟 | 🌟 |
 | ✔ [Day 3: Toboggan Trajectory](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day03)| 🌟 | 🌟 |
 | ✔ [Day 4: Passport Processing](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day04)| 🌟 | 🌟 |
-| [Day 5: TBD]()| | |
+| ✔ [Day 5: Binary Boarding](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day05)| 🌟 | 🌟 |
 | [Day 6: TBD]()| | |
 | [Day 7: TBD]()| | |
 | [Day 8: TBD]()| | |

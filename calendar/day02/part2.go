@@ -4,11 +4,16 @@ import (
 	"AdventOfCode2020/utils/files"
 	"AdventOfCode2020/utils/slices"
 	"fmt"
+	"strings"
 )
 
 func Part2() int {
-	input := files.ReadFile("calendar/day02/input", "\n")
-	validPasswords := slices.StringFilter(input, isPasswordValid)
+	input := files.ReadFile("calendar/day02/input")
+	return solvePart2(input)
+}
+
+func solvePart2(puzzleInput string) int {
+	validPasswords := slices.StringFilter(strings.Split(puzzleInput, "\n"), isPasswordValid)
 
 	return len(validPasswords)
 }

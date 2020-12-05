@@ -8,9 +8,12 @@ import (
 )
 
 func Part1() int {
-	input := files.ReadFile("calendar/day02/input", "\n")
-	validPasswords := slices.StringFilter(input, isPasswordValidCountChar)
+	input := files.ReadFile("calendar/day02/input")
+	return solvePart1(input)
+}
 
+func solvePart1(puzzleInput string) int {
+	validPasswords := slices.StringFilter(strings.Split(puzzleInput, "\n"), isPasswordValidCountChar)
 	return len(validPasswords)
 }
 

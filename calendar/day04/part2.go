@@ -5,17 +5,21 @@ import (
 	"AdventOfCode2020/utils/conv"
 	"AdventOfCode2020/utils/files"
 	"AdventOfCode2020/utils/slices"
-	"fmt"
 	"regexp"
 	"strings"
 )
 
+
+
 func Part2() int {
-	input := files.ReadFile("calendar/day04/input", "\n\n")
+	input := files.ReadFile("calendar/day04/input")
 
-	validPassports := slices.StringFilter(input, isPassportValidWithConstraints)
+	return solvePart2(input)
+}
 
-	return len(validPassports)
+func solvePart2(puzzleInput string) int {
+	passports := strings.Split(puzzleInput, "\n\n")
+	return len(slices.StringFilter(passports, isPassportValidWithConstraints))
 }
 
 func isPassportValidWithConstraints(passportString string) bool {
@@ -82,25 +86,14 @@ func isValidPassportId(str string) bool {
 func isValidHeight(str string) bool {
 
 	switch {
-	case strings.Contains(str, "cm"):
-		var height int
-
-		_, err := fmt.Sscanf(str, "%dcm", &height)
-
-		if err != nil {
-			panic(err)
-		}
+	case str[len(str) - 2:] == "cm":
+		height := conv.ToInt(str[:len(str) - 2])
 
 		if height >= 150 && height <= 193 {
 			return true
 		}
-	case strings.Contains(str, "in"):
-		var height int
-		_, err := fmt.Sscanf(str, "%din", &height)
-
-		if err != nil {
-			panic(err)
-		}
+	case str[len(str) - 2:] == "in":
+		height := conv.ToInt(str[:len(str) - 2])
 
 		if height >= 59 && height <= 76 {
 			return true

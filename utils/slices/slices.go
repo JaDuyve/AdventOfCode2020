@@ -39,7 +39,17 @@ func ToTwoDimArray(slice []string, delimiter string) [][]string {
 	return retSlice
 }
 
-func Print2DimArray(slice [][]string) {
+func Print2DimStringArray(slice [][]string) {
+	var result string
+
+	for _, str := range slice {
+		result += fmt.Sprintf("%v\n", str)
+	}
+
+	print(result)
+}
+
+func Print2DimIntArray(slice [][]int) {
 	var result string
 
 	for _, str := range slice {

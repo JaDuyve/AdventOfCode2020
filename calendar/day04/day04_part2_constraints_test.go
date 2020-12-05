@@ -1,7 +1,6 @@
 package day04
 
 import (
-	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -83,7 +82,7 @@ func Test_IsValidEyeColor_ExistingColors_Valid(t *testing.T) {
 	colors := []string{"amb", "blu", "brn", "gry", "grn", "hzl", "oth"}
 
 	for _, color := range colors {
-		assert.True(t, isValidEyeColor(color), fmt.Sprintf("Eye color \"%s\" should be valid", color))
+		assert.Truef(t, isValidEyeColor(color), "Eye color \"%s\" should be valid", color)
 	}
 }
 
