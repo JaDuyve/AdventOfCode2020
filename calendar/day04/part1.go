@@ -18,12 +18,10 @@ func solvePart1(puzzleInput string) int {
 }
 
 func isPassportValid(passportString string) bool {
-	fields := []string{"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"}
-
 	passportString = strings.ReplaceAll(passportString, "\n", " ")
 	passport := aocstring.ExtractFieldOfString(strings.Split(passportString, " "), ":")
 
-	for _, field := range fields {
+	for field, _ := range fields {
 		if _, ok := passport[field]; ok == false {
 			return false
 		}

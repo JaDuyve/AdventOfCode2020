@@ -1,15 +1,15 @@
-package main
+package day0
 
 import (
    	"AdventOfCode2020/utils/files"
 )
 
-func main() {
+func Part() int {
     input := files.ReadFile("input")
-    println(input)
+    return solvePart(input)
 
 }
 
 func solvePart(puzzleInput string) int {
-
+    return -1
 }

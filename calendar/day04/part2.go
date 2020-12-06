@@ -9,7 +9,15 @@ import (
 	"strings"
 )
 
-
+var fields = map[string]func(string) bool{
+	"byr": isValidBirthYear,
+	"iyr": isValidIssueYear,
+	"eyr": isValidExpirationYear,
+	"hgt": isValidHeight,
+	"hcl": isValidHairColor,
+	"ecl": isValidEyeColor,
+	"pid": isValidPassportId,
+}
 
 func Part2() int {
 	input := files.ReadFile("calendar/day04/input")
@@ -23,16 +31,6 @@ func solvePart2(puzzleInput string) int {
 }
 
 func isPassportValidWithConstraints(passportString string) bool {
-	fields := map[string]func(string) bool{
-		"byr": isValidBirthYear,
-		"iyr": isValidIssueYear,
-		"eyr": isValidExpirationYear,
-		"hgt": isValidHeight,
-		"hcl": isValidHairColor,
-		"ecl": isValidEyeColor,
-		"pid": isValidPassportId,
-	}
-
 	passportString = strings.ReplaceAll(passportString, "\n", " ")
 	passport := aocstring.ExtractFieldOfString(strings.Split(passportString, " "), ":")
 
@@ -86,14 +84,14 @@ func isValidPassportId(str string) bool {
 func isValidHeight(str string) bool {
 
 	switch {
-	case str[len(str) - 2:] == "cm":
-		height := conv.ToInt(str[:len(str) - 2])
+	case str[len(str)-2:] == "cm":
+		height := conv.ToInt(str[:len(str)-2])
 
 		if height >= 150 && height <= 193 {
 			return true
 		}
-	case str[len(str) - 2:] == "in":
-		height := conv.ToInt(str[:len(str) - 2])
+	case str[len(str)-2:] == "in":
+		height := conv.ToInt(str[:len(str)-2])
 
 		if height >= 59 && height <= 76 {
 			return true

@@ -6,6 +6,7 @@ import (
 	"AdventOfCode2020/calendar/day03"
 	"AdventOfCode2020/calendar/day04"
 	"AdventOfCode2020/calendar/day05"
+	"AdventOfCode2020/calendar/day06"
 	"fmt"
 )
 
@@ -20,6 +21,6 @@ func main() {
 	fmt.Printf("Result day 04 part 2: [%d]\n", day04.Part2())
 	fmt.Printf("Result day 05 part 1: [%d]\n", day05.Part1())
 	fmt.Printf("Result day 05 part 2: [%d]\n", day05.Part2())
-
+	fmt.Printf("Result day 06 part 1: [%d]\n", day06.Part1())
+	fmt.Printf("Result day 06 part 2: [%d]\n", day06.Part2())
 }
-
