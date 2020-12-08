@@ -1,6 +1,6 @@
 # Advent of Code 2020
 
-Advent of Code 2020 in golang
+[Advent of Code 2020](https://adventofcode.com/2020) in golang
 
 The solutions of the challenges in this repository are by no means good, these are just my personal repo to keep track my progress.
 
@@ -29,9 +29,9 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 3: Toboggan Trajectory](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day03)| 🌟 | 🌟 |
 | ✔ [Day 4: Passport Processing](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day04)| 🌟 | 🌟 |
 | ✔ [Day 5: Binary Boarding](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day05)| 🌟 | 🌟 |
-| [Day 6: TBD]()| | |
-| [Day 7: TBD]()| | |
-| [Day 8: TBD]()| | |
+| ✔ [Day 6: Custom Customs](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day06)| 🌟 | 🌟 |
+| ✔ [Day 7: Handy Haversacks](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day07)| 🌟 | 🌟 |
+| ✔ [Day 8: Handheld Halting](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day08)| 🌟 | 🌟 |
 | [Day 9: TBD]()| | |
 | [Day 10: TBD]()| | |
 | [Day 11: TBD]()| | |
