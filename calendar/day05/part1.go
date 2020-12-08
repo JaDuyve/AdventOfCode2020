@@ -7,17 +7,17 @@ import (
 )
 
 type Seat struct {
-	row int
+	row    int
 	column int
 }
 
 func (s *Seat) getSeatId() int {
-	return s.row * 8 + s.column
+	return s.row*8 + s.column
 }
 
 func Part1() int {
-    input := files.ReadFile("calendar/day05/input")
-    return solvePart1(input)
+	input := files.ReadFile("calendar/day05/input")
+	return solvePart1(input)
 
 }
 
@@ -54,12 +54,12 @@ func calculatePosition(code string, lowerChar uint8, upperChar uint8, start int,
 	}
 
 	if code[0] == lowerChar {
-		end = start + (end - start) / 2
+		end = start + (end-start)/2
 		return calculatePosition(code[1:], lowerChar, upperChar, start, end)
 	}
 
 	if code[0] == upperChar {
-		start += int(math.Ceil(float64(end - start) / 2))
+		start += int(math.Ceil(float64(end-start) / 2))
 		return calculatePosition(code[1:], lowerChar, upperChar, start, end)
 	}
 

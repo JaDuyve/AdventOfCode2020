@@ -9,6 +9,10 @@ import (
 	"strings"
 )
 
+var eyeColorRegex = regexp.MustCompile("^(amb|blu|brn|gry|grn|hzl|oth)$")
+var hairColorRegex = regexp.MustCompile("^#[0-9a-f]{6}$")
+var passportIdRegex = regexp.MustCompile("^[0-9]{9}$")
+
 var fields = map[string]func(string) bool{
 	"byr": isValidBirthYear,
 	"iyr": isValidIssueYear,
@@ -67,18 +71,15 @@ func isValidYear(yearString string, start int, end int) bool {
 }
 
 func isValidEyeColor(color string) bool {
-	match, _ := regexp.MatchString("^(amb|blu|brn|gry|grn|hzl|oth)$", color)
-	return match
+	return eyeColorRegex.MatchString(color)
 }
 
 func isValidHairColor(color string) bool {
-	match, _ := regexp.MatchString("^#[0-9a-f]{6}$", color)
-	return match
+	return hairColorRegex.MatchString(color)
 }
 
 func isValidPassportId(str string) bool {
-	match, _ := regexp.MatchString("^[0-9]{9}$", str)
-	return match
+	return passportIdRegex.MatchString(str)
 }
 
 func isValidHeight(str string) bool {

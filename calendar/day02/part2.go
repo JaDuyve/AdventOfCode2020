@@ -28,5 +28,5 @@ func isPasswordValid(entry string) bool {
 		panic(err)
 	}
 
-	return (password[min - 1] == character) != (password[max - 1] == character)
+	return (password[min-1] == character) != (password[max-1] == character)
 }

@@ -73,7 +73,6 @@ func Test_IsValidHeight_WithIN_Valid(t *testing.T) {
 	assert.True(t, isValidHeight("60in"), "Height \"60in\" should be valid")
 }
 
-
 func Test_IsValidHeight_WithoutMetric_Invalid(t *testing.T) {
 	assert.False(t, isValidHeight("60"), "Height value \"60\" has no metric -> should be invalid!")
 }

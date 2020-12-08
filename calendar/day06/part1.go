@@ -1,14 +1,14 @@
 package day06
 
 import (
-   	"AdventOfCode2020/utils/files"
+	"AdventOfCode2020/utils/files"
 	"go/types"
 	"strings"
 )
 
 func Part1() int {
-    input := files.ReadFile("calendar/day06/input")
-    return solvePart1(input)
+	input := files.ReadFile("calendar/day06/input")
+	return solvePart1(input)
 }
 
 func solvePart1(puzzleInput string) int {

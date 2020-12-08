@@ -6,8 +6,8 @@ import (
 )
 
 func Part2() int {
-    input := files.ReadFile("calendar/day06/input")
-    return solvePart2(input)
+	input := files.ReadFile("calendar/day06/input")
+	return solvePart2(input)
 
 }
 
@@ -40,4 +40,3 @@ func countQuestions(questions string) int {
 
 	return numberOfQuestions
 }
-
