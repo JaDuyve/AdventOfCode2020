@@ -32,7 +32,7 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 6: Custom Customs](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day06)| 🌟 | 🌟 |
 | ✔ [Day 7: Handy Haversacks](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day07)| 🌟 | 🌟 |
 | ✔ [Day 8: Handheld Halting](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day08)| 🌟 | 🌟 |
-| [Day 9: TBD]()| | |
+| ✔ [Day 9: Encoding Error](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day09)| 🌟 | 🌟 |
 | [Day 10: TBD]()| | |
 | [Day 11: TBD]()| | |
 | [Day 12: TBD]()| | |
