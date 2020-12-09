@@ -1,6 +1,7 @@
 package day01
 
 import (
+	"AdventOfCode2020/utils/aocmath"
 	"AdventOfCode2020/utils/conv"
 	"AdventOfCode2020/utils/files"
 	"strings"
@@ -14,19 +15,7 @@ func Part2() int {
 func solvePart2(puzzleInput string) int {
 	expenseReport := conv.ToIntSlice(strings.Split(puzzleInput, "\n"))
 
-	for indexA, expenseA := range expenseReport {
-		for indexB, expenseB := range expenseReport {
-			for indexC, expenseC := range expenseReport {
-				if indexA == indexB || indexB == indexC || indexA == indexC {
-					continue
-				}
+	sum := aocmath.ThreeSum(expenseReport, 2020)[0]
 
-				if expenseA+expenseB+expenseC == 2020 {
-					return expenseA * expenseB * expenseC
-				}
-			}
-		}
-	}
-
-	return -1
+	return sum[0] * sum[1] * sum[2]
 }

@@ -1,9 +1,9 @@
 package day09
 
 import (
+	"AdventOfCode2020/utils/aocmath"
 	"AdventOfCode2020/utils/conv"
 	"AdventOfCode2020/utils/files"
-	"AdventOfCode2020/utils/slices"
 	"strings"
 )
 
@@ -24,14 +24,11 @@ func findWeakness(keyNumber int, cypher []int, preamble int) int {
 	for lengthContinuousSet := 2; lengthContinuousSet <= preamble; lengthContinuousSet++ {
 		for i := 0; i < len(cypher) - lengthContinuousSet; i++ {
 			continuousSet := cypher[i: i + lengthContinuousSet]
-			if slices.SumSlice(continuousSet) == keyNumber {
-				return slices.Min(continuousSet) + slices.Max(continuousSet)
+			if aocmath.SumSlice(continuousSet) == keyNumber {
+				return aocmath.Min(continuousSet) + aocmath.Max(continuousSet)
 			}
 		}
 	}
 
 	return -1
 }
-
-
-
