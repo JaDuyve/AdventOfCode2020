@@ -58,3 +58,37 @@ func Print2DimIntArray(slice [][]int) {
 
 	print(result)
 }
+
+func SumSlice(slice []int) int {
+	sum := 0
+
+	for _, number := range slice {
+		sum += number
+	}
+
+	return sum
+}
+
+func Min(slice []int) int {
+	min := slice[0]
+
+	for _, number := range slice {
+		if number < min {
+			min = number
+		}
+	}
+
+	return min
+}
+
+func Max(slice []int) int {
+	max := slice[0]
+
+	for _, number := range slice {
+		if number > max {
+			max = number
+		}
+	}
+
+	return max
+}
