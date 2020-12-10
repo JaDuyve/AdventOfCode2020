@@ -17,7 +17,7 @@ func solvePart2(puzzleInput string, preamble int) int {
 	cypher := conv.ToIntSlice(strings.Split(puzzleInput, "\n"))
 	invalidNumber := findInvalidNumber(cypher, preamble)
 
-    return findWeakness(invalidNumber, cypher, preamble)
+	return findWeaknessOptimized(invalidNumber, cypher, preamble)
 }
 
 func findWeakness(keyNumber int, cypher []int, preamble int) int {
@@ -31,4 +31,27 @@ func findWeakness(keyNumber int, cypher []int, preamble int) int {
 	}
 
 	return -1
+}
+
+func findWeaknessOptimized(target int, cypher []int, preamble int) int {
+	start, end := 0, 1
+	sum := cypher[start] + cypher[end]
+
+	for end < len(cypher) && start < len(cypher) {
+
+		switch {
+		case sum > target:
+			sum -= cypher[start]
+			start++
+		case sum < target:
+			end++
+			sum += cypher[end]
+		case sum == target:
+			continuousSet := cypher[start:end]
+			return aocmath.Max(continuousSet) + aocmath.Min(continuousSet)
+		}
+	}
+
+	return -1
+
 }
