@@ -33,7 +33,7 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 7: Handy Haversacks](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day07)| 🌟 | 🌟 |
 | ✔ [Day 8: Handheld Halting](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day08)| 🌟 | 🌟 |
 | ✔ [Day 9: Encoding Error](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day09)| 🌟 | 🌟 |
-| [Day 10: TBD]()| | |
+| ✔ [Day 10: Adapter Array](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day10)| 🌟 | 🌟 |
 | [Day 11: TBD]()| | |
 | [Day 12: TBD]()| | |
 | [Day 13: TBD]()| | |
