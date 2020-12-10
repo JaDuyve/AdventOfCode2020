@@ -18,7 +18,7 @@ func solvePart1(puzzleInput string, preamble int) int {
 }
 
 func findInvalidNumber(cypher []int, preamble int) int {
-	for i := preamble + 1; i < len(cypher); i++ {
+	for i := preamble; i < len(cypher); i++ {
 		if !foundSum(cypher[i], cypher[i - preamble: i]) {
 			return cypher[i]
 		}
