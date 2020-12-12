@@ -12,19 +12,19 @@ func Part1() int {
 }
 
 func solvePart1(puzzleInput string) int {
-	area := slices.ToTwoDimArray(strings.Split(puzzleInput, "\n"), "")
+	area := slices.ToTwoDimArray(strings.Split(puzzleInput, "\n"))
 
 	numberOfTrees := calcNumberOfTreesForSlope1(area, 3, 1)
 
 	return numberOfTrees
 }
 
-func calcNumberOfTreesForSlope1(area [][]string, right int, down int) (numberOfTrees int) {
+func calcNumberOfTreesForSlope1(area [][]rune, right int, down int) (numberOfTrees int) {
 
 	areaWidth := len(area[0])
 
 	for x, y := right, down; y < len(area); x, y = (x+right)%areaWidth, y+down {
-		if area[y][x] == "#" {
+		if area[y][x] == '#' {
 			numberOfTrees++
 		}
 	}

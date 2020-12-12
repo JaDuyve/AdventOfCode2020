@@ -2,7 +2,6 @@ package slices
 
 import (
 	"fmt"
-	"strings"
 )
 
 func StringFilter(slice []string, filter func(string) bool) []string {
@@ -29,21 +28,21 @@ func IntFilter(slice []int, filter func(int) bool) []int {
 	return resSlice
 }
 
-func ToTwoDimArray(slice []string, delimiter string) [][]string {
-	retSlice := make([][]string, 0, len(slice))
+func ToTwoDimArray(slice []string) [][]rune {
+	retSlice := make([][]rune, 0, len(slice))
 
 	for _, str := range slice {
-		retSlice = append(retSlice, strings.Split(str, delimiter))
+		retSlice = append(retSlice, []rune(str))
 	}
 
 	return retSlice
 }
 
-func Print2DimStringArray(slice [][]string) {
+func Print2DimRuneArray(slice [][]rune) {
 	var result string
 
 	for _, str := range slice {
-		result += fmt.Sprintf("%v\n", str)
+		result += fmt.Sprintf("%c\n", str)
 	}
 
 	print(result)

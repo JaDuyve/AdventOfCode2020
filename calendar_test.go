@@ -11,6 +11,7 @@ import (
 	"AdventOfCode2020/calendar/day08"
 	"AdventOfCode2020/calendar/day09"
 	"AdventOfCode2020/calendar/day10"
+	"AdventOfCode2020/calendar/day11"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -113,4 +114,14 @@ func Test_Day10_Part1(t *testing.T) {
 func Test_Day10_Part2(t *testing.T) {
 	solution := 113_387_824_750_592
 	assert.Equalf(t, solution, day10.Part2(), "Solution day 10 part 2 should be [%d]", solution)
+}
+
+func Test_Day11_Part1(t *testing.T) {
+	solution := 2418
+	assert.Equalf(t, solution, day11.Part1(), "Solution day 11 part 1 should be [%d]", solution)
+}
+
+func Test_Day11_Part2(t *testing.T) {
+	solution := 2144
+	assert.Equalf(t, solution, day11.Part2(), "Solution day 11 part 2 should be [%d]", solution)
 }

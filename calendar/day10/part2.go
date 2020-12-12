@@ -17,14 +17,13 @@ func solvePart2(puzzleInput string) int {
 	adapters := conv.ToIntSlice(strings.Split(puzzleInput, "\n"))
 	adapters = makeAdapterChain(adapters)
 
-	ad := make(map[int][]int)
+	adapterMap := make(map[int][]int)
 
 	for _, element := range adapters {
-		ad[element] = []int{element + 3, element + 2, element + 1}
+		adapterMap[element] = []int{element + 3, element + 2, element + 1}
 	}
 
-
-    return countNumberOfDistinctAdapterChains(ad, make(map[int]int), aocmath.Max(adapters), 0)
+    return countNumberOfDistinctAdapterChains(adapterMap, make(map[int]int), aocmath.Max(adapters), 0)
 }
 
 func countNumberOfDistinctAdapterChains(adapters map[int][]int, history map[int]int, target int, currentPos int) int {
