@@ -117,3 +117,11 @@ func threeSumBruteForce(slice []int, target int) (result [][]int) {
 
 	return
 }
+
+func Abs(number int) int {
+	if number < 0 {
+		return -number
+	}
+
+	return number
+}
