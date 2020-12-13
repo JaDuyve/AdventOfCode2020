@@ -125,3 +125,35 @@ func Abs(number int) int {
 
 	return number
 }
+
+func Pow(x int, y int, m int) int {
+	if y == 0 {
+		return 1
+	}
+
+	p := Pow(x, y/2, m) % m
+	p = (p * p) % m
+
+	if y%2 == 0 {
+		return p
+	} else {
+		return (x * p) % m
+	}
+}
+
+func Gcd(a int, b int) int {
+	if a == 0 {
+		return b
+	}
+
+	return Gcd(b%a, a)
+}
+
+func ModInverse(a int, m int) int {
+	g := Gcd(a, m)
+	if g != 1 {
+		return -1
+	}
+
+	return Pow(a, m - 2, m)
+}

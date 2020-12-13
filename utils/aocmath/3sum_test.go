@@ -1,6 +1,7 @@
 package aocmath
 
 import (
+	"github.com/stretchr/testify/assert"
 	"math/rand"
 	"testing"
 	"time"
@@ -37,3 +38,8 @@ func generateRandomArray(size int) []int {
 	return array
 }
 
+func Test_ModInverse(t *testing.T) {
+	a, m := 3, 11
+	expected := 4
+	assert.Equal(t, expected, ModInverse(a, m))
+}

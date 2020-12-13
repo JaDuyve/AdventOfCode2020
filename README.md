@@ -35,8 +35,8 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 9: Encoding Error](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day09)| 🌟 | 🌟 |
 | ✔ [Day 10: Adapter Array](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day10)| 🌟 | 🌟 |
 | ✔ [Day 11: Seating System](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day11)| 🌟 | 🌟 |
-| [Day 12: TBD]()| | |
-| [Day 13: TBD]()| | |
+| ✔ [Day 12: Rain Risk](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day12)| 🌟 | 🌟 |
+| ✔ [Day 13: Shuttle Search](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day13)| 🌟 | 🌟 |
 | [Day 14: TBD]()| | |
 | [Day 15: TBD]()| | |
 | [Day 16: TBD]()| | |

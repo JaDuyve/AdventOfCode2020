@@ -12,17 +12,19 @@ import (
 	"AdventOfCode2020/calendar/day09"
 	"AdventOfCode2020/calendar/day10"
 	"AdventOfCode2020/calendar/day11"
+	"AdventOfCode2020/calendar/day12"
+	"AdventOfCode2020/calendar/day13"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
 func Test_Day01_Part1(t *testing.T) {
-	solution := 805731
+	solution := 805_731
 	assert.Equalf(t, solution, day01.Part1(), "Solution day 1 part 1 should be [%d]", solution)
 }
 
 func Test_Day01_Part2(t *testing.T) {
-	solution := 192684960
+	solution := 192_684_960
 	assert.Equalf(t, solution, day01.Part2(), "Solution day 1 part 2 should be [%d]", solution)
 }
 
@@ -42,7 +44,7 @@ func Test_Day03_Part1(t *testing.T) {
 }
 
 func Test_Day03_Part2(t *testing.T) {
-	solution := 2832009600
+	solution := 2_832_009_600
 	assert.Equalf(t, solution, day03.Part2(), "Solution day 3 part 2 should be [%d]", solution)
 }
 
@@ -67,12 +69,12 @@ func Test_Day05_Part2(t *testing.T) {
 }
 
 func Test_Day06_Part1(t *testing.T) {
-	solution := 6585
+	solution := 6_585
 	assert.Equalf(t, solution, day06.Part1(), "Solution day 6 part 1 should be [%d]", solution)
 }
 
 func Test_Day06_Part2(t *testing.T) {
-	solution := 3276
+	solution := 3_276
 	assert.Equalf(t, solution, day06.Part2(), "Solution day 6 part 2 should be [%d]", solution)
 }
 
@@ -82,12 +84,12 @@ func Test_Day07_Part1(t *testing.T) {
 }
 
 func Test_Day07_Part2(t *testing.T) {
-	solution := 10219
+	solution := 10_219
 	assert.Equalf(t, solution, day07.Part2(), "Solution day 7 part 2 should be [%d]", solution)
 }
 
 func Test_Day08_Part1(t *testing.T) {
-	solution := 1727
+	solution := 1_727
 	assert.Equalf(t, solution, day08.Part1(), "Solution day 8 part 1 should be [%d]", solution)
 }
 
@@ -97,17 +99,17 @@ func Test_Day08_Part2(t *testing.T) {
 }
 
 func Test_Day09_Part1(t *testing.T) {
-	solution := 23278925
+	solution := 23_278_925
 	assert.Equalf(t, solution, day09.Part1(), "Solution day 9 part 1 should be [%d]", solution)
 }
 
 func Test_Day09_Part2(t *testing.T) {
-	solution := 4011064
+	solution := 4_011_064
 	assert.Equalf(t, solution, day09.Part2(), "Solution day 9 part 2 should be [%d]", solution)
 }
 
 func Test_Day10_Part1(t *testing.T) {
-	solution := 1917
+	solution := 1_917
 	assert.Equalf(t, solution, day10.Part1(), "Solution day 10 part 1 should be [%d]", solution)
 }
 
@@ -117,11 +119,31 @@ func Test_Day10_Part2(t *testing.T) {
 }
 
 func Test_Day11_Part1(t *testing.T) {
-	solution := 2418
+	solution := 2_418
 	assert.Equalf(t, solution, day11.Part1(), "Solution day 11 part 1 should be [%d]", solution)
 }
 
 func Test_Day11_Part2(t *testing.T) {
-	solution := 2144
+	solution := 2_144
 	assert.Equalf(t, solution, day11.Part2(), "Solution day 11 part 2 should be [%d]", solution)
+}
+
+func Test_Day12_Part1(t *testing.T) {
+	solution := 1_032
+	assert.Equalf(t, solution, day12.Part1(), "Solution day 12 part 1 should be [%d]", solution)
+}
+
+func Test_Day12_Part2(t *testing.T) {
+	solution := 156_735
+	assert.Equalf(t, solution, day12.Part2(), "Solution day 12 part 2 should be [%d]", solution)
+}
+
+func Test_Day13_Part1(t *testing.T) {
+	solution := 1_915
+	assert.Equalf(t, solution, day13.Part1(), "Solution day 13 part 1 should be [%d]", solution)
+}
+
+func Test_Day13_Part2(t *testing.T) {
+	solution := 294_354_277_694_107
+	assert.Equalf(t, solution, day13.Part2(), "Solution day 13 part 2 should be [%d]", solution)
 }
