@@ -37,7 +37,7 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 11: Seating System](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day11)| 🌟 | 🌟 |
 | ✔ [Day 12: Rain Risk](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day12)| 🌟 | 🌟 |
 | ✔ [Day 13: Shuttle Search](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day13)| 🌟 | 🌟 |
-| [Day 14: TBD]()| | |
+| ✔ [Day 14: Docking Data](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day14)| 🌟 | 🌟 |
 | [Day 15: TBD]()| | |
 | [Day 16: TBD]()| | |
 | [Day 17: TBD]()| | |
