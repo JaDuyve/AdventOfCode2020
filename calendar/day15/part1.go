@@ -35,13 +35,3 @@ func solvePart1(puzzleInput string, turn int) int {
 
 	return numbers[turn-1]
 }
-
-func findOccurrenceIndex(numbers []int, number int) int {
-	for i := len(numbers) - 1; i >= 0; i-- {
-		if numbers[i] == number {
-			return i
-		}
-	}
-
-	return -1
-}
