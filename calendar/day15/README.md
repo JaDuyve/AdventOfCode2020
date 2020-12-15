@@ -1,22 +1,24 @@
 # Day 15: Rambunctious Recitation
 
+## Part One
 You catch the airport shuttle and try to book a new flight to your vacation island. 
 Due to the storm, all direct flights have been cancelled, but a route is available to get around the storm. You take it.
 
 While you wait for your flight, you decide to check in with the Elves back at the North Pole. 
-They're playing a memory game and are ever so excited to explain the rules!
+They're playing a ***memory game*** and are ever so excited to explain the rules!
 
-In this game, the players take turns saying numbers. 
-They begin by taking turns reading from a list of starting numbers (your puzzle input). 
-Then, each turn consists of considering the most recently spoken number:
+In this game, the players take turns saying ***numbers***. 
+They begin by taking turns reading from a list of ***starting numbers*** (your puzzle input). 
+Then, each turn consists of considering the ***most recently spoken number***:
 
-If that was the first time the number has been spoken, the current player says 0.
-Otherwise, the number had been spoken before; 
-the current player announces how many turns apart the number is from when it was previously spoken.
-So, after the starting numbers, each turn results in that player speaking aloud either 0 (if the last number is new) 
-or an age (if the last number is a repeat).
+* If that was the ***first*** time the number has been spoken, the current player says ***`0`***.
+* Otherwise, the number had been spoken before; 
+the current player announces ***how many turns apart*** the number is from when it was previously spoken.
 
-For example, suppose the starting numbers are 0,3,6:
+So, after the starting numbers, each turn results in that player speaking aloud either ***`0`*** (if the last number is new) 
+or an ***age*** (if the last number is a repeat).
+
+For example, suppose the starting numbers are `0,3,6`:
 
 * ***Turn 1***: The `1`st number spoken is a starting number, ***`0`***.
 * ***Turn 2***: The `2`nd number spoken is a starting number, ***`3`***.
@@ -47,7 +49,7 @@ Here are a few more examples:
 
 Given your starting numbers, ***what will be the `2020`th number spoken?***
 
-# Part Two
+## Part Two
 
 Impressed, the Elves issue you a challenge: determine the `30000000`th number spoken. 
 For example, given the same starting numbers as above:
