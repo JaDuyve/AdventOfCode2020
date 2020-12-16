@@ -57,3 +57,7 @@ func Print2DimIntArray(slice [][]int) {
 
 	print(result)
 }
+
+func Remove(slice []int, index int) []int {
+	return append(slice[:index], slice[index+1:]...)
+}
