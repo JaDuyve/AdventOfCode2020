@@ -61,3 +61,38 @@ func Print2DimIntArray(slice [][]int) {
 func Remove(slice []int, index int) []int {
 	return append(slice[:index], slice[index+1:]...)
 }
+
+func CopyString4Dim(src [][][][]string) [][][][]string {
+	dst := make([][][][]string, 0, len(src))
+
+	for i := 0; i < len(src) ;i++ {
+		dst = append(dst, CopyString3Dim(src[i]))
+	}
+
+	return dst
+}
+
+func CopyString3Dim(src [][][]string) [][][]string {
+	dst := make([][][]string, 0, len(src))
+
+	for i := 0; i < len(src) ;i++ {
+		dst = append(dst, CopyString2Dim(src[i]))
+	}
+
+	return dst
+}
+
+func CopyString2Dim(src [][]string) [][]string {
+	dst := make([][]string, 0, len(src))
+
+	for i := 0; i < len(src);i ++ {
+		a := make([]string, len(src[i]))
+		copy(a, src[i])
+		dst = append(dst, a)
+	}
+
+	return dst
+}
+
+
+
