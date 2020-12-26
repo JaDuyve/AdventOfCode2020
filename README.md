@@ -39,12 +39,12 @@ Each puzzle grants one star. Good luck!
 | ✔ [Day 13: Shuttle Search](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day13)| 🌟 | 🌟 |
 | ✔ [Day 14: Docking Data](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day14)| 🌟 | 🌟 |
 | ✔ [Day 15: Rambunctious Recitation](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day15)| 🌟 | 🌟 |
-| [Day 16: TBD]()| | |
-| [Day 17: TBD]()| | |
+| ✔ [Day 16: Ticket Translation](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day16)| 🌟 | 🌟 |
+| [Day 17: Conway Cubes](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day17)| 🌟 | |
 | [Day 18: TBD]()| | |
 | [Day 19: TBD]()| | |
 | [Day 20: TBD]()| | |
-| [Day 21: TBD]()| | |
+| ✔ [Day 21: Allergen Assessment](https://github.com/JaDuyve/AdventOfCode2020/tree/main/calendar/day21)| 🌟 | 🌟 |
 | [Day 22: TBD]()| | |
 | [Day 23: TBD]()| | |
 | [Day 24: TBD]()| | |

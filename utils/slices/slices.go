@@ -58,14 +58,20 @@ func Print2DimIntArray(slice [][]int) {
 	print(result)
 }
 
-func Remove(slice []int, index int) []int {
-	return append(slice[:index], slice[index+1:]...)
+func RemoveChangeOrder(slice []string, index int) []string {
+	slice[index] = slice[len(slice)-1]
+	return slice[:len(slice)-1]
+}
+
+func Remove(slice []interface{}, index int) []interface{} {
+	copy(slice[index:], slice[index+1:])
+	return slice[:len(slice)-1]
 }
 
 func CopyString4Dim(src [][][][]string) [][][][]string {
 	dst := make([][][][]string, 0, len(src))
 
-	for i := 0; i < len(src) ;i++ {
+	for i := 0; i < len(src); i++ {
 		dst = append(dst, CopyString3Dim(src[i]))
 	}
 
@@ -75,7 +81,7 @@ func CopyString4Dim(src [][][][]string) [][][][]string {
 func CopyString3Dim(src [][][]string) [][][]string {
 	dst := make([][][]string, 0, len(src))
 
-	for i := 0; i < len(src) ;i++ {
+	for i := 0; i < len(src); i++ {
 		dst = append(dst, CopyString2Dim(src[i]))
 	}
 
@@ -85,7 +91,7 @@ func CopyString3Dim(src [][][]string) [][][]string {
 func CopyString2Dim(src [][]string) [][]string {
 	dst := make([][]string, 0, len(src))
 
-	for i := 0; i < len(src);i ++ {
+	for i := 0; i < len(src); i++ {
 		a := make([]string, len(src[i]))
 		copy(a, src[i])
 		dst = append(dst, a)
@@ -93,6 +99,3 @@ func CopyString2Dim(src [][]string) [][]string {
 
 	return dst
 }
-
-
-
